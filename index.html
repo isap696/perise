@@ -2,20 +2,122 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Minha primeira página</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <title>Produtos Site</title>
 </head>
 
 <body>
-    <h1>Título</h1>
-    <h2>subtítulo</h2>
-    <div id="DivBox">
-    <p>Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Vehicula non. Ut sed ex eros.
-        Vivamus sit amet nibh non tellus tristique interdum. Interagi no mé, cursus quis, vehicula ac nisi.
-        Segunda-feiris nun dá, eu vô me pirulitá!</p>
+
+
+  <header>
+    <img src="images/Ativo 1.png" class="logo" alt="logo">
+    <nav>
+      <ul>
+        <li><a href="produtos.html">sobre nós</a></li>
+        <li><a href="#">cardápio</a></li>
+        <li><a href="#">ambiente</a></li>
+        <li><a href="#">contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <img src="images/banner CERTO.png" class="banner" width="100%" alt="banner">
+  </section>
+
+  <section class="divisor">
+
+  </section>
+
+  <main>
+    <section class="container">
+      <!-- <h2>Pratos principais</h2> -->
+
+      <div class="product">
+
+        <h3>Peito de frango</h3>
+        <p>Serve:<br>Peito de frango coberto com legumes fritos</p>
+        <img src="images/peito de frango.PNG" alt="Cheddar duplo">
+        <div class="price">R$ 127,80</div>
+      </div>
+
+      <div class="product">
+        <h3>Macarrão quadrado khangal</h3>
+        <p>Serve:<br>Macarrão quadrado khangal com carne picada e cebola</p>
+        <img src="images/macarrão.PNG" alt="Big king">
+        <div class="price">R$ 172,80</div>
+      </div>
+
+      <div class="product">
+        <h3>Camarão em molho teriyaki</h3>
+        <p>Serve:<br>Camarão em molho teriyaki com fettuccini</p>
+        <img src="images/camarao.PNG" alt="bk fish">
+        <div class="price">R$ 138,80</div>
+      </div>
+    </section>
+
+
+
+    </section>
+
+    <section class="container">
+    <div class="img">
+      <img src="images/antigasso.png" alt="Descrição da imagem" style="width: 300px; margin-right: 20px;">
     </div>
+
+    <div class="text">
+      <h2>Desde 1969</h2>
+      <p>Bem-vindo ao Perise Restaurante, um ícone da gastronomia local desde 1969.
+        Ao longo dos anos, nos dedicamos a oferecer uma experiência culinária
+        única, combinando sabores autênticos com um ambiente acolhedor.
+        Nossos pratos, preparados com ingredientes frescos e de produtores locais,
+        refletem nossa paixão pela qualidade e tradição. Cada refeição conta uma
+        história, das receitas familiares às inovações que encantam nossos clientes.
+        Agradecemos a todos que fazem parte da nossa história e convidamos você a nos
+        visitar e celebrar conosco!</p>
+    </div>
+  </section>
+    <h2 style="text-align: center;">Contato</h2>
+
+    <form action="seu-script-de-envio.php" method="POST" style="max-width: 600px; margin: 0 auto;">
+      <div style="margin-bottom: 15px;">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required
+          style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div style="margin-bottom: 15px;">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required
+          style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div style="margin-bottom: 15px;">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required
+          style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+      </div>
+      <button type="submit"
+        style="background-color: #b99636; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
+        Enviar
+      </button>
+    </form>
+
+
+
+
+  </main>
+
+ 
+
+
+  <footer>
+    <p>&copy;Perise.restaurante-2024 </p>
+  </footer>
 
 </body>
 
